@@ -3,7 +3,7 @@
 :root{
     /*Colors*/
     --background-red: #702626;
-    --dark-red: #D82525;
+    --light-red: #D82525;
     --light-red: #F73E3E;
     --default-white: #FFFFFF;
     --logo-white: #E6E6E6;
@@ -23,16 +23,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.title-tab{
+    color: var(--default-white);
+    font-size: 2rem;
+}
+
+.subtitle-tab{
+    color: var(--logo-white);
+    font-size: 1rem;
+}
+
 /* =====================================================================
     Page up button
    ===================================================================== */
 .pageup #pageup-icon{
-    right: 20px;
-    bottom: 20px;
     position: fixed;
+    bottom: 20px;
+    right: 20px;
     font-size: 0px;
-    color: #000000;
+    color: var(--light-red);
     cursor: pointer;
+    z-index: 10;
 }
 
 /* =====================================================================
@@ -59,14 +70,13 @@
 .nav-menu a:focus{
     display: flex;
     align-items: center;
+    border-radius: 10px;
     color: var(--default-white);
     transition: 0.3s;
     font-size: 15px;
 }
 
-.nav-menu a:hover,
-.nav-menu .active,
-.nav-menu .active:focus{
+.nav-menu a:hover{
     text-decoration: none;
     color: var(--light-grey);
 }
@@ -84,11 +94,13 @@
 
 #banner h2{
     color: var(--default-white);
+    font-size: 3.5rem;
     text-align: center;
 }
 
 #banner h3{
     color: var(--default-white);
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -105,7 +117,7 @@
 }
 
 #banner-btn:hover{
-    background-color: var(--dark-red);
+    background-color: var(--light-red);
     letter-spacing: 1px;
 }
 
@@ -115,6 +127,155 @@
 
 #services{
     width: 100%;
-    height: 100vh;
+    padding: 100px 0 0 0;
     background-color: var(--background-red);
+}
+
+.container-services{
+    padding: 100px 0 100px 0;
+}
+
+.card-services{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s; 
+}
+
+.card-services:hover{
+    width: 310px;
+    height: 360px;
+    background: var(--default-white);   
+    transform: translateX(-5px) translateY(-5px);
+    -webkit-box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.20); 
+    box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.20);
+}
+
+.card-services .content-cards-services{
+    width: 100%;
+    height: 100%;
+    color: var(--title-color);
+    border-radius: 10px;
+    padding: 20px 40px 20px 40px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.content-cards-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card-services-title{
+    color: var(--default-white);
+    font-size: 1.5rem;
+}
+
+.card-services:hover .card-services-title{
+    color: var(--background-red);
+}
+
+.content-cards-services p{
+    color: var(--light-grey);
+    top: 20%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s; 
+}
+
+.card-services:hover .content-cards-services p{
+    color: #000000;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =====================================================================
+   ---------------------------------------------------------------------
+   Medias
+   ---------------------------------------------------------------------
+   ===================================================================== */
+
+@media(max-width: 1024px){
+    .nav-menu{
+        justify-content: space-between;
+        z-index: 1000;
+    }
+    
+    .nav-menu .navigation{
+        display: none;
+    }
+
+    .nav-menu .navigation.active{
+        width: 100%;
+        height: 100vh;
+        position: fixed;       
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(4px);
+    }
+
+    .nav-menu .navigation li{
+        margin-left: 0;
+    }
+
+    .nav-menu .navigation li a{
+        margin: 5px 0px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: var(--regular-font-weight);
+    }
+
+    .nav-menu .navigation li a:hover{
+        padding: 10px 20px;
+        color: #FBFEFC;
+        background-color: var(--light-red);
+        font-size: 20px;
+        font-weight: var(--regular-font-weight);
+    }
+
+    .toggle{
+        position: fixed;
+        width: 32px;
+        height: 32px;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        background: url(../images/bars.svg);
+        background-size: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1000;
+    }
+
+    .toggle.active{
+        background: url(../images/close.svg);
+        background-size: 32px;
+        background-position: center;
+        background-repeat: no-repeat;        
+    }
 }

@@ -20,13 +20,19 @@
     </div>
 
     <!-- =====================================================================
+        Mobile menu Button
+         ===================================================================== -->
+    
+
+    <!-- =====================================================================
         Navbar
          ===================================================================== -->
     <header>
         <nav id="navbar" class="nav-menu">
             <a class="navbar-logo" href="/"><img src="../static/images/logo-red-short-329x256.png"></a>
 
-            <ul class="nav justify-content-center">
+            <div class="toggle"></div>
+            <ul class="navigation nav justify-content-center">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Início</a>
                 </li>
@@ -38,7 +44,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contatos</a>
-                  </li>            
+                </li>          
             </ul>
 
         </nav>
@@ -60,8 +66,36 @@
     <!-- =====================================================================
         Services
          ===================================================================== -->
-    <section id="services">
-
+    <section id="services" class="row m-0">
+        <div class="col"></div>
+        <div class="col-md-10">
+            <h2 class="title-tab">Serviços</h2>
+            <h3 class="subtitle-tab">Nossos serviços profissionais.</h3>
+            <div class="container-services row m-0 d-flex justify-content-center align-items-center">
+                <div class="card-services col-md-4" id="card-one-services">
+                    <div class="content-cards-services">
+                        <div class="content-img"><img src="../static/images/note.svg" alt="Conserto de PC'S/Notebooks."></div>
+                        <h3 class="card-services-title">Conserto de PC's/Notebooks</h3>
+                        <p>Manuntenção de hardware e software em PC's e notebooks.</p>
+                    </div>
+                </div>
+                <div class="card-services col-md-4" id="card-two-services">
+                    <div class="content-cards-services">
+                        <div class="content-img"><img src="../static/images/printer.svg" alt="Conserto de Impressoras."></div>
+                        <h3 class="card-services-title">Conserto de Impressoras</h3>
+                        <p>Diagnóstico e manuntenção técnica em impressoras.</p>
+                    </div>
+                </div>
+                <div class="card-services col-md-4" id="card-tree-services">
+                    <div class="content-cards-services">
+                        <div class="content-img"><img src="../static/images/cam.svg" alt="Circuito de Câmeras."></div>
+                        <h3 class="card-services-title">Circuito de Câmeras</h3>
+                        <p>Dimensionamento e instalação de circuitos de câmeras(CFTV).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
     </section>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
