@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    /*Colors*/
+    --background-red: #702626;
+    --dark-red: #D82525;
+    --light-red: #F73E3E;
+    --default-white: #FFFFFF;
+    --logo-white: #E6E6E6;
+    --logo-brown: #899363;
+    --light-grey: #d3d3d3;
+
+    /*Font-weight*/
+    --light-font-weight: 300;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semi-bold-font-weight: 600;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =====================================================================
+    Page up button
+   ===================================================================== */
+.pageup #pageup-icon{
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    font-size: 0px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* =====================================================================
+    Navbar
+   ===================================================================== */
+
+.nav-menu{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-logo img{
+    width: 75px;
+    height: 58px;
+}
+
+.nav-menu a,
+.nav-menu a:focus{
+    display: flex;
+    align-items: center;
+    color: var(--default-white);
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus{
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
+/* =====================================================================
+    Banner
+   ===================================================================== */
+
+#banner{
+    background: url(../images/banner.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#banner h2{
+    color: var(--default-white);
+    text-align: center;
+}
+
+#banner h3{
+    color: var(--default-white);
+    text-align: center;
+}
+
+#banner-btn{
+    margin: 20px 0 20px 0;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--logo-white);
+    background-color: var(--background-red);
+    font-weight: var(--semi-bold-font-weight);
+    transition: all 0.3s ease 0s;
+}
+
+#banner-btn:hover{
+    background-color: var(--dark-red);
+    letter-spacing: 1px;
+}
+
+/* =====================================================================
+    Services
+   ===================================================================== */
+
+#services{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-red);
+}
