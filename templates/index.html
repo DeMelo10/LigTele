@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <title>LigTele Informática</title>
 </head>
+
 <body>
 
     <!-- =====================================================================
@@ -18,11 +20,6 @@
     <div class="pageup">
         <a href="#"><i id="pageup-icon" class="bi bi-arrow-up-square-fill"></i></a>
     </div>
-
-    <!-- =====================================================================
-        Mobile menu Button
-         ===================================================================== -->
-    
 
     <!-- =====================================================================
         Navbar
@@ -34,17 +31,20 @@
             <div class="toggle"></div>
             <ul class="navigation nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#services">Serviços</a>
+                    <a class="nav-link" href="#services">Serviços</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link" href="#clients">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contatos</a>
-                </li>          
+                </li>
             </ul>
 
         </nav>
@@ -74,14 +74,16 @@
             <div class="container-services row m-0 d-flex justify-content-center align-items-center">
                 <div class="card-services col-md-4" id="card-one-services">
                     <div class="content-cards-services">
-                        <div class="content-img"><img src="../static/images/note.svg" alt="Conserto de PC'S/Notebooks."></div>
+                        <div class="content-img"><img src="../static/images/note.svg" alt="Conserto de PC'S/Notebooks.">
+                        </div>
                         <h3 class="card-services-title">Conserto de PC's/Notebooks</h3>
                         <p>Manuntenção de hardware e software em PC's e notebooks.</p>
                     </div>
                 </div>
                 <div class="card-services col-md-4" id="card-two-services">
                     <div class="content-cards-services">
-                        <div class="content-img"><img src="../static/images/printer.svg" alt="Conserto de Impressoras."></div>
+                        <div class="content-img"><img src="../static/images/printer.svg" alt="Conserto de Impressoras.">
+                        </div>
                         <h3 class="card-services-title">Conserto de Impressoras</h3>
                         <p>Diagnóstico e manuntenção técnica em impressoras.</p>
                     </div>
@@ -98,7 +100,89 @@
         <div class="col"></div>
     </section>
 
+    <section id="clients" class="row m-0">
+        <div class="col"></div>
+        <div class="col-md-10">
+            <h2 class="title-tab">Clientes</h2>
+            <h3 class="subtitle-tab">Alguns dos nossos clientes.</h3>
+
+            <div class="row m-0">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 d-flex justify-content-center align-items-center flex-column">
+                    <div id="carousel-clients" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-clients" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-clients" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-clients" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card bg-dark text-white">
+                                    <img src="../static/images/slide1.png" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Cliente 1</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card bg-dark text-white">
+                                    <img src="../static/images/slide2.png" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Cliente 2</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card bg-dark text-white">
+                                    <img src="../static/images/slide3.png" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Cliente 3</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-clients"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-clients"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </section>
+
+    <!-- =====================================================================
+        About
+         ===================================================================== -->
+    <section id="about" class="row m-0">
+        <div class="col"></div>
+        <div class="col-md-10">
+            <h2 class="title-tab">Sobre</h2>
+            <h3 class="subtitle-tab">Um pouco sobre nossa história.</h3>
+        </div>
+        <div class="col"></div>
+    </section>
+
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/script.js"></script>
 </body>
+
 </html>
