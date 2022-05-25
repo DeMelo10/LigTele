@@ -24,11 +24,13 @@
 }
 
 .title-tab{
+    padding-left: 50px;
     color: var(--default-white);
     font-size: 2rem;
 }
 
 .subtitle-tab{
+    padding-left: 50px;
     color: var(--logo-white);
     font-size: 1rem;
 }
@@ -236,7 +238,7 @@
     Contact
    ===================================================================== */
 #contact{
-    padding: 100px 0 0 0;
+    padding: 100px 0 0 0px;
 }
 
 #contact .title-tab{
@@ -306,7 +308,7 @@
 }
 
 .footer h6{
-    font-size: var(--small-font-size);
+    font-size: 12px;
     font-weight: var(--light-font-weight);
     color: #e6e6e6;
     margin: 0px;
