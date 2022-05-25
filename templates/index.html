@@ -43,7 +43,7 @@
                     <a class="nav-link" href="#about">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contatos</a>
+                    <a class="nav-link" href="#contact">Contatos</a>
                 </li>
             </ul>
 
@@ -184,9 +184,60 @@
         <div class="col"></div>
     </section>
 
+    <!-- =====================================================================
+        Contact
+        ===================================================================== -->
+    <section id="contact">
+        <div class="container mb-5">
+            <h2 class="title-tab">Contato</h2>
+            <h3 class="subtitle-tab">Entre em contato com a gente!</h3>
+            <div class="row mt-5">
+                <div class="col-md-5">
+                    <div class="card p-5 shadow border-0">
+                        <div class="address">
+                            <h4><i class="bi bi-geo-alt"></i></i> Localização</h4>
+                            <p>Av. General San Martin, 1982 - RECIFE-PE.</p>
+                        </div>
+                        <div class="email">
+                            <h4><i class="bi bi-envelope"></i></i> Email</h4>
+                            <p>contato.ligtele@gmail.com</p>
+                        </div>
+                        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.321810114661!2d-34.93044068588835!3d-8.068621682868564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19357933ada5%3A0x29ffe775a01c3577!2sAv.%20Gen.%20San%20Martin%2C%201982%20-%20San%20Martin%2C%20Recife%20-%20PE%2C%2050761-000!5e0!3m2!1spt-BR!2sbr!4v1653434532974!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-7 mt-5 mt-md-0">
+                    <div class="card p-5 h-100 shadow border-0">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-6">
+                              <label for="nome" class="form-label">Nome</label>
+                              <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                              </div>
+
+                            <div class="col-12">
+                              <label for="mensagem" class="form-label">Mensagem</label>
+                              <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows="10" placeholder="Digite sua mensagem..."></textarea>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-center mt-4">
+                              <button type="submit" id="send-btn" class="btn btn-primary">Enviar</button>
+                            </div>
+                          </form>
 
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+
+
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/script.js"></script>
 </body>

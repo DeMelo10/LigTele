@@ -211,7 +211,6 @@
    ===================================================================== */
 #clients{
     width: 100%;
-    height: 700px;
     padding: 100px 0 0 0;
     background-color: #eb5f5f;
 }
@@ -230,9 +229,48 @@
    ===================================================================== */
 #about{
     width: 100%;
-    height: 100vh;
     padding: 100px 0 0 0;
     background-color: var(--logo-white);
+}
+
+/* =====================================================================
+    Contact
+   ===================================================================== */
+#contact{
+    padding: 100px 0 0 0;
+}
+
+#contact .title-tab{
+    color: #000000;
+}
+
+#contact .subtitle-tab{
+    color: #000000;
+}
+
+#contact i{
+    font-size: 18px;
+}
+
+#contact h4{
+    font-size: 18px;
+}
+
+#send-btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 10px;
+    color: var(--logo-white);
+    background-color: var(--background-red);
+    font-weight: var(--semi-bold-font-weight);
+    transition: all 0.3s ease 0s;
+}
+
+#send-btn:hover{
+    background-color: var(--light-red);
+    letter-spacing: 1px;
 }
 
 /* =====================================================================
